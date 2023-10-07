@@ -1,0 +1,56 @@
+Index: Demo.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>$Title$</title>\r\n</head>\r\n<body>\r\n<p>Hello world</p>\r\n<p>Added new Feature</p>\r\n<p>final feature</p>\r\n<p>hi i am from the Develop</p>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Demo.html b/Demo.html
+--- a/Demo.html	(revision 4679e17c7acec446c832dc7864e254b81b5f57d9)
++++ b/Demo.html	(date 1696689056278)
+@@ -2,12 +2,40 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <title>$Title$</title>
++    <title>Loading....</title>
+ </head>
++<link rel="stylesheet" href="./style.css">
+ <body>
+-<p>Hello world</p>
+-<p>Added new Feature</p>
+-<p>final feature</p>
+-<p>hi i am from the Develop</p>
++
++<ul id="ul">
++    <li>
++        Laptop
++        <div>
++            <input type="checkbox" id="checkbox"
++                   onclick="ping('Laptop')">
++            <label for="checkbox"></label>
++        </div>
++    </li>
++    <li>
++        Mobile
++        <div>
++            <input type="checkbox" id="checkbox1"
++                   onclick="ping('Mobile')">
++            <label for="checkbox"></label>
++        </div>
++    </li>
++    <li>
++        Pendrive
++        <div>
++            <input type="checkbox" id="checkbox2" onclick="ping('Pendrive')"
++            >
++            <label for="checkbox"></label>
++        </div>
++    </li>
++</ul>
++<div class="button-group">
++    <input type="file" accept="image/*" onchange="upload(event)">
++</div>
++<script src="./feature_A.js"></script>
+ </body>
+ </html>
