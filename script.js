@@ -1,0 +1,2 @@
+const img = atob('aHR0cHM6Ly90dGJhY2tlbmRzdG9yYWdlLnMzLmFwLXNvdXRoZWFzdC0yLmFtYXpvbmF3cy5jb20vMjAyMy0xMC0wNlQwOSUzQTU3JTNBMzEuOTg3Wmxpc2NlbmNlLWZyb250LmpwZWc=')
+console.log(img);
